@@ -17,7 +17,7 @@ void main() async {
 }
 
 Future<Map> getData() async {
-  http.Response response = await http.get(request);
+  http.Response response = await http.get(request); // recebendo a requisiçao da API
   return json.decode(response.body);
 }
 
@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
 
   void _clearAll(){
     realController.text = "";
-    dolarController.text = "";
+    dolarController.text = ""; // funçao pra limpar os campos 
     euroController.text = "";
   }
 
